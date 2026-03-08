@@ -1,0 +1,64 @@
+# Global Configuration for 3rd Study
+
+# -- Data and Preprocessing --
+LOOKBACK = 5
+TRAIN_SPLIT_RATIO = 0.8
+NOISE_DIM = (100,)
+
+# -- Walk Forward Validation --
+WALK_FORWARD_WINDOW = 252
+WALK_FORWARD_STEP = 21
+
+# -- Training --
+EPOCHS = 100
+BATCH_SIZE = 32
+VALIDATION_SPLIT = 0.1
+
+# -- Optimizers --
+OPTIMIZER_ADAM = 'adam'
+
+# -- Loss Functions --
+LOSS_MSE = 'mean_squared_error'
+LOSS_BINARY_CROSSENTROPY = 'binary_crossentropy'
+
+# -- Activation Functions --
+ACTIVATION_RELU = 'relu'
+LEAKY_RELU_ALPHA = 0.2
+ACTIVATION_SIGMOID = 'sigmoid'
+ACTIVATION_TANH = 'tanh'
+ACTIVATION_LINEAR = None
+
+# -- Models Hyperparameters --
+# LSTM Model
+LSTM_NUM_LSTM_LAYERS = 2
+LSTM_UNITS = 50
+LSTM_DROPOUT = 0.2
+LSTM_NUM_DENSE_LAYERS = 1
+LSTM_DENSE_UNITS = 25
+
+# CNN-LSTM Model
+CNN_FILTERS = 64
+CNN_KERNEL_SIZE = 3
+CNN_POOL_SIZE = 2
+CNN_LSTM_UNITS = 50
+CNN_LSTM_DROPOUT = 0.2
+CNN_DENSE_UNITS = 25
+
+# GAN General
+GAN_EPOCHS = 1000
+GAN_DENSE_D_UNITS = 128
+GAN_DENSE_D_DROPOUT = 0.3
+
+# LSTM-GAN (Model 4)
+LSTM_GAN_G_UNITS = 50
+LSTM_GAN_D_UNITS = 50
+
+# LSTM-CNN-GAN (Model 5)
+LSTM_CNN_GAN_G_UNITS = 50
+LSTM_CNN_GAN_D_FILTERS = 64
+LSTM_CNN_GAN_D_KERNEL_SIZE = 3
+LSTM_CNN_GAN_D_POOL_SIZE = 2
+
+# CNN-LSTM-GAN (Model 6)
+CNN_LSTM_GAN_G_DENSE_UNITS = 128
+CNN_LSTM_GAN_D_UNITS = 50

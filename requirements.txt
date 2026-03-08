@@ -1,0 +1,9 @@
+tensorflow>=2.10.0
+pandas
+numpy
+matplotlib
+scikit-learn
+yfinance
+seaborn
+tqdm
+scipy

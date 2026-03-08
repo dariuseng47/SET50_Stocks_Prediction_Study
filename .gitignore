@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Data and Models
+step1_data_import/raw_data/*.csv
+!step1_data_import/raw_data/.gitkeep
+step2_model_architecture/saved_models/**/*.h5
+step2_model_architecture/saved_models/**/*.keras
+step2_model_architecture/saved_models/**/*.json
+step4_result/**/*.csv
+step4_result/**/*.txt
+step5_evaluation/logs/
+
+# Visualization Outputs
+step6_visualization/1_prediction_plots/*.png
+step6_visualization/2_stock_tables/*.png
+step6_visualization/3_global_summary/*.png
+step6_visualization/4_training_curves/*.png
+step6_visualization/5_error_analysis/*.png
+step6_visualization/6_individual_model_performance/*.png
+step6_visualization/7_individual_model_direction/*.png
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Project specific
+Evaluation_Summary_Highlighted.csv
+Evaluation_Summary_Table.csv
+Highlighted_Results.md
+Project_Full_Report.md
+Result.md
+report*.md
